@@ -30,7 +30,6 @@ function App() {
       }, "-=0.6");
 
       // 2. SCROLL ANIMATION: Driving the car
-      // We use 1:1 mapping with "none" ease for maximum smoothness
       gsap.to(carRef.current, {
         x: "130vw", 
         rotation: 10,
@@ -40,7 +39,7 @@ function App() {
           trigger: scrollWrapperRef.current,
           start: "top top",
           end: "bottom bottom",
-          scrub: 1.2, // Balanced smoothness
+          scrub: 1.2, 
         }
       });
 
@@ -76,7 +75,6 @@ function App() {
   return (
     <main ref={mainContainer} className="bg-zinc-950 text-white selection:bg-orange-500">
       
-      {/* Reduced to 300vh: Perfect distance for "WELCOME ITZFIZZ" */}
       <div ref={scrollWrapperRef} className="relative h-[300vh]">
         <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center px-4">
           
