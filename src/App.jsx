@@ -106,7 +106,7 @@ function App() {
             <div className="relative">
               <div className="absolute inset-0 bg-orange-500/10 blur-[120px] rounded-full"></div>
               <img 
-                src="https://pngimg.com/d/porsche_PNG10624.png" 
+                src="porsche.png" 
                 alt="Racing Car"
                 className="w-full h-auto drop-shadow-[0_40px_60px_rgba(0,0,0,0.9)]"
               />
