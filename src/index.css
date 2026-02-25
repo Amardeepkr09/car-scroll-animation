@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+body {
+  background-color: #09090b;
+}
+.header-bar {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222; /* dark bar */
+  padding: 15px 20px;
+  border-radius: 100px;
+  max-width: 1284px;
+  margin: 20px auto; /* center horizontally with margin */
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.logo-icon {
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-item {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+
+.nav-item:hover {
+  color: #ff6600; /* orange highlight on hover */
+}
+
+.nav-item.active {
+  color: #ff6600; /* orange for active */
+  background-color: rgba(255, 102, 0, 0.15);
+}
+
+.btn-talk {
+  background: white;
+  color: #222;
+  border: none;
+  padding: 8px 22px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.3s;
+}
+
+.btn-talk:hover {
+  background: #eee;
+}
+
+.arrow {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
